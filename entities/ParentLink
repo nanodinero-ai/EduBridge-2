@@ -1,0 +1,28 @@
+{
+  "name": "ParentLink",
+  "type": "object",
+  "properties": {
+    "parent_name": {
+      "type": "string"
+    },
+    "parent_phone": {
+      "type": "string"
+    },
+    "learner_id": {
+      "type": "string"
+    },
+    "learner_name": {
+      "type": "string"
+    },
+    "learner_grade": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "parent_phone",
+    "learner_id"
+  ]
+}
