@@ -1,0 +1,43 @@
+{
+  "name": "LessonProgress",
+  "type": "object",
+  "properties": {
+    "learner_id": {
+      "type": "string"
+    },
+    "learner_name": {
+      "type": "string"
+    },
+    "lesson_id": {
+      "type": "string"
+    },
+    "lesson_title": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "started",
+        "completed"
+      ],
+      "default": "started"
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "quiz_score": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "learner_id",
+    "lesson_id"
+  ]
+}
