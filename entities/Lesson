@@ -1,0 +1,106 @@
+{
+  "name": "Lesson",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string",
+      "enum": [
+        "Grade 1",
+        "Grade 2",
+        "Grade 3",
+        "Grade 4",
+        "Grade 5",
+        "Grade 6",
+        "Grade 7",
+        "Grade 8",
+        "Grade 9",
+        "Grade 10",
+        "Grade 11",
+        "Grade 12"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "Mathematics",
+        "English",
+        "Afrikaans",
+        "isiZulu",
+        "isiXhosa",
+        "Life Skills",
+        "Natural Sciences",
+        "Social Sciences",
+        "Technology",
+        "Economic Management Sciences",
+        "Life Orientation",
+        "Physical Sciences",
+        "Geography",
+        "History",
+        "Accounting",
+        "Business Studies",
+        "Computer Applications"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "live",
+        "recorded",
+        "notes"
+      ],
+      "default": "recorded"
+    },
+    "audio_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "video_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "notes_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "teacher_id": {
+      "type": "string"
+    },
+    "teacher_name": {
+      "type": "string"
+    },
+    "is_live": {
+      "type": "boolean",
+      "default": false
+    },
+    "scheduled_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "published",
+        "archived"
+      ],
+      "default": "published"
+    }
+  },
+  "required": [
+    "title",
+    "grade",
+    "subject"
+  ]
