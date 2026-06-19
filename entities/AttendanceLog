@@ -1,0 +1,27 @@
+{
+  "name": "AttendanceLog",
+  "type": "object",
+  "properties": {
+    "learner_id": {
+      "type": "string"
+    },
+    "learner_name": {
+      "type": "string"
+    },
+    "login_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "minutes_active": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "learner_id",
+    "login_date"
+  ]
+}
