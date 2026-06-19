@@ -1,0 +1,32 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "string"
+    },
+    "sender_name": {
+      "type": "string"
+    },
+    "sender_role": {
+      "type": "string",
+      "enum": [
+        "learner",
+        "teacher"
+      ]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "room_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "content",
+    "room_id"
+  ]
+}
